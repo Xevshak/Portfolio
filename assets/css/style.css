@@ -148,7 +148,7 @@ nav a:active {
     max-width: 150px;
     padding: 10px;
     color: white;
-    z-index: 200;
+    z-index: 1;
 }
 /* transparent effect on the images to appear out of focus until mouse hovers over them */
 .coverImage {
