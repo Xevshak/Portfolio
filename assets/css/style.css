@@ -1,0 +1,215 @@
+
+:root {
+    --text: #172426;
+    --header-bg: #6878A6;
+    --bg: #C2CEF2;
+    --border: #323C59;
+    --link-text: #6878A6;
+}
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    flex-direction: column;
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    min-height: 100vh;
+}
+
+h1 {
+    color:var(--text);
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 200%;
+    color: var(--text);
+}
+
+ul {
+    list-style-type: none;
+}
+/* nav bar */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 550px;
+}
+
+nav a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    height: 60px;
+    margin-bottom: 2%;
+}
+
+footer nav a {
+    font-size: 200%;
+    color: var(--link-text);
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+    color: rgbvar(--link-text);
+}
+
+footer nav a:active {
+    color: var(--text);
+}
+
+nav a:hover {
+    color: var(--text);
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-bg);
+    color: var(--text);
+    padding: 2%;
+    font-size: 175%;
+}
+/* background image formatting size */
+.hero {
+    background-image: url("https://media.discordapp.net/attachments/536272802395979820/861549627907506186/20210705_060511.jpg?width=1391&height=676");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 33%;
+    flex-direction: column;
+}
+
+.imageSize {
+    height: 200px;
+}
+
+.projectOne {
+    height: 375px;
+}
+
+.jumbotron {
+    position: relative;
+    color: white;
+    background-color: var(--header-bg);
+    width: 20%;
+    font-size: 150%;
+    top: 502px;
+    left: 80%;
+    padding: 10px;
+}
+@media screen and (min-width: 1312px) {
+    .jumbotron {
+        width:10%;
+        left: 90%;
+    }
+}
+.article {
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 125%;
+}
+
+/* flexing containers on webpage for resizing purposes */
+.flexContainer {
+    display: flex;
+    margin-top: 4%;
+    padding: 10px 0 10px 0;
+    align-content: center;
+}
+/* caption that appears on top of project images */
+.caption {
+    background-color: var(--header-bg);
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    min-width: 30px;
+    max-width: 150px;
+    padding: 10px;
+    color: white;
+    z-index: 200;
+}
+/* transparent effect on the images to appear out of focus until mouse hovers over them */
+.coverImage {
+    opacity: 1;
+}
+
+.coverImage:hover {
+    opacity: 0.5;    
+}
+
+.imageOne {
+    justify-content: center;
+    display: flex;
+    flex: 1 1 40%;
+}
+
+.spacing {
+    padding-left: 25px;
+}
+/* border in between titles and content */
+.borderAboutMe {
+    border-right: 5px solid var(--border);
+    padding-right: 51.703px;
+    padding-left: 30px;
+}
+
+.borderWork {
+    border-right: 5px solid var(--border);
+    padding-right: 64.687px;
+    padding-left: 30px;
+}
+
+.borderContact {
+    border-right: 5px solid var(--border);
+    padding-right: 25px;
+    padding-left: 30px;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    up: 10px;
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        flex-direction: row;
+    }
+    
+    .grid {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1312px) {
+    .imageSize {
+        height: 300px;
+    }
+
+    .projectOne {
+        height: 475px;
+    }
+}
